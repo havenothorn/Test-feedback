@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="todo">
+        <h1 class="title">오늘의 할일은? 📝</h1>
+        <form class="todo__form">
+          <input
+            type="text"
+            placeholder="올리브영에서 뷰러 쇼핑하기"
+            required
+          />
+          <button>+</button>
+        </form>
+        <ul class="todo__list">
+          <li class="todo__list-item">
+            <input type="radio" />
+            <span class="item__txt">코딩 테스트 4시</span>
+            <button class="item--deleted">X</button>
+          </li>
+          <li class="todo__list-item">
+            <input type="radio" checked="checked" />
+            <span class="item__txt finished">개발 공부하기</span>
+            <button class="item--deleted">X</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="./todo.js"></script>
+</html>
